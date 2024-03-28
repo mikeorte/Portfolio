@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael's Portfolio</title>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Michael Ortega</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello World! I am</h3>
+        <h1>Michael Ortega</h1>
+        <h3>And I'm a <span class="typing-text"></span></h3>
+        <p>
+          With a passion for backend development and software engineering, I am
+          always looking for new challenges and opportunities to grow as a
+          professional.
+        </p>
+        <div class="social-media">
+          <a href="https://github.com/mikeorte" target="_blank">
+            <i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/michael-ortega-88b201222/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/Profile-no-background.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/Profile-no-background.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Programmer</h3>
+        <p>
+          Based in Florida, I received my first computer when I was 7 years old,
+          and since then, I have loved technology. Starting with playing video
+          games, I have grown into wanting to create things of my own. Since
+          then, I have created a few games of my own and have worked on various
+          projects. I am currently a Junior at Florida Gulf Coast University.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <h3>Languages and Databases</h3>
+          <p class="skills-icons">
+            <!-- <img src="/images/Skills/python.svg" alt="Python"/> Have not done yet.-->
+            <img src="/images/Skills/html.svg" alt="HTML" />
+            <img src="/images/Skills/CSS.svg" alt="CSS" />
+            <img src="/images/Skills/javascript.svg" alt="javascript" />
+            <img src="/images/Skills/mysql.svg" alt="MySQL" />
+            <!-- <img src="/images/Skills/postgre.svg" alt="Postgre"/> Have no projects to reflect it.-->
+            <img src="/images/Skills/C++.svg" alt="C++" />
+            <!-- <img src="/images/Skills/Csharp.svg" alt="C#"/> Have not done yet.-->
+          </p>
+        </div>
+        <div class="skills-box">
+          <h3>Frameworks</h3>
+          <p class="skills-icons">
+            <img src="/images/Skills/nodejs.svg" alt="Node.js" />
+          </p>
+        </div>
+        <div class="skills-box">
+          <h3>Tools</h3>
+          <p class="skills-icons">
+            <img src="/images/Skills/Git.svg" alt="Git" />
+            <img src="/images/Skills/GitHub.svg" alt="GitHub" />
+            <img src="/images/Skills/vscode.svg" alt="VS-Code" />
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="skills-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+            cumque tenetur, modi minima ratione blanditiis sunt iste, eum soluta
+            deleniti quasi hic odit, quisquam voluptates ducimus eius incidunt
+            commodi aperiam?
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+            cumque tenetur, modi minima ratione blanditiis sunt iste, eum soluta
+            deleniti quasi hic odit, quisquam voluptates ducimus eius incidunt
+            commodi aperiam?
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div> -->
+    </section>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/Projects/2048.png" alt="2048" />
+          <div class="portfolio-layer">
+            <h4>2048 Game</h4>
+            <p>
+              A simple game of 2048 made in C++ using the console. The biggest
+              focus that this game helped me learn, was vectors and how to
+              manipulate them.
+            </p>
+            <a href="https://github.com/mikeorte/2048-Game" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/Projects/To-Do-List.png" alt="To-Do-List" />
+          <div class="portfolio-layer">
+            <h4>To-Do-List</h4>
+            <p>
+              While very simple, this was the first project that I made using
+              HTML, CSS, and JavaScript. It was a great way to learn how to
+              manipulate the DOM and how to use local storage.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio3.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+              recusandae.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio4.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+              recusandae.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+              recusandae.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio6.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+              recusandae.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text"></div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
