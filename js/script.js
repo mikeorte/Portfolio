@@ -66,3 +66,30 @@ const typed = new Typed(".typing-text", {
   backDelay: 1000,
   loop: true,
 });
+
+/*==================== EmailJS Integration ====================*/
+document.addEventListener("DOMContentLoaded", function () {
+  (function () {
+    emailjs.init("-wTVg3isd-303RTR9");
+  })();
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const serviceID = "service_fm31r8w";
+      const templateID = "template_tooog9r";
+
+      emailjs.sendForm(serviceID, templateID, this).then(
+        () => {
+          alert("Your message has been sent successfully!");
+          document.getElementById("contact-form").reset();
+        },
+        (err) => {
+          alert("Failed to send the message. Please try again later.");
+          console.error("Failed to send email:", err);
+        }
+      );
+    });
+});

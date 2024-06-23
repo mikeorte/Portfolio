@@ -235,18 +235,17 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#">
+      <form id="contact-form">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="name" placeholder="Full Name" />
+          <input type="email" name="email" placeholder="Email Address" />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Phone Number" />
-          <input type="text" placeholder="Subject" />
+          <input type="number" name="phone" placeholder="Phone Number" />
+          <input type="text" name="subject" placeholder="Subject" />
         </div>
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
@@ -267,6 +266,12 @@
 
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>
