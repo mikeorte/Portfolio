@@ -45,11 +45,12 @@ ScrollReveal({
   duration: 2000,
   delay: 200,
 });
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(
-  ".home-img, .services-container, .portfolio-box, .contact-form",
-  { origin: "bottom" }
-);
+ScrollReveal().reveal(".home-content, .heading, .skills-box", {
+  origin: "top",
+});
+ScrollReveal().reveal(".home-img, .services-container, .filter-buttons", {
+  origin: "bottom",
+});
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "left" });
 
@@ -92,4 +93,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       );
     });
+});
+
+/*==================== Data Filters ====================*/
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-buttons button");
+  const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+
+  // Display all portfolio boxes initially
+  portfolioBoxes.forEach((box) => {
+    box.style.display = "block";
+  });
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      // Add active class to the clicked button
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+      portfolioBoxes.forEach((box) => {
+        if (
+          filter === "all" ||
+          box.getAttribute("data-tags").includes(filter)
+        ) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    });
+  });
 });

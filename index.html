@@ -172,9 +172,18 @@
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
       <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="highlights">Highlights</button>
+        <button data-filter="cpp">C++</button>
+        <button data-filter="nodejs">Node.js</button>
+        <button data-filter="html-css-js">HTML/CSS/JS</button>
+        <button data-filter="mern">MERN</button>
+        <button data-filter="python">Python</button>
+      </div>
       <div class="portfolio-container">
         <!-- 2048 Game -->
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-tags="highlights cpp">
           <img src="images/Projects/2048.png" alt="2048" />
           <div class="portfolio-layer">
             <h4>2048 Game</h4>
@@ -190,7 +199,7 @@
         </div>
 
         <!-- Game-Lounge-Reservation-System -->
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-tags="highlights nodejs">
           <img
             src="images/Projects/Game-Lounge-Reservation-System.png"
             alt="Game-Lounge-Reservation-System"
@@ -210,7 +219,7 @@
         </div>
 
         <!-- To-Do-List -->
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-tags="html-css-js">
           <img src="images/Projects/To-Do-List.png" alt="To-Do-List" />
           <div class="portfolio-layer">
             <h4>To-Do-List</h4>
@@ -224,7 +233,7 @@
         </div>
 
         <!-- MERN Item-Tracker -->
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-tags="mern nodejs">
           <img
             src="images/Projects/MERN-Item-Tracker.png"
             alt="MERN-Item-Tracker"
@@ -245,7 +254,8 @@
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <!-- Password-Breach-Frequency -->
+        <div class="portfolio-box" data-tags="highlights python">
           <img
             src="images/Projects/Password-Breach-Frequency.png"
             alt="Password-Breach-Frequency"
