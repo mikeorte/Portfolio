@@ -52,7 +52,7 @@ ScrollReveal().reveal(".home-img, .services-container, .filter-buttons", {
   origin: "bottom",
 });
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "left" });
+ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 /*==================== typed js ====================*/
 const typed = new Typed(".typing-text", {
